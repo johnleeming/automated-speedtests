@@ -1,7 +1,7 @@
 {
     "interval": "1800",
     "speedtestPath": "speedtest-cli/speedtest_cli.py",
-    "webserverPath": "speedtest",
+    "webserverPath": "website",
     "twitter": {
         "tweeting": "disabled",
         "consumerKey": "none",
