@@ -26,7 +26,7 @@ tests = 0
 
 
 
-with open('config.json', 'r') as f:
+with open('/home/pi/automated-speedtests/config.json', 'r') as f:
         config = json.load(f)
 
 def pingTest():
@@ -71,6 +71,10 @@ def speedTest(ping, down, up, img, tests):
         writer = csv.writer(fileSpeedResults)
         writer.writerow((date, ping, down, up))
         fileSpeedResults.close()
+
+        #save just latest value for status display
+        with open('/home/pi/automated-speedtests/latest.csv', 'w') as latest:
+            latest.write(date + ',' + ping + ',' + down + ',' + up)
 
         ping = float(ping)
         down = float(down)
