@@ -1,17 +1,17 @@
 {
     "interval": "1800",
     "speedtestPath": "speedtest-cli/speedtest_cli.py",
-    "webserverPath": "website",
+    "webserverPath": "speedtest",
     "twitter": {
-        "tweeting": "enabled",
+        "tweeting": "disabled",
         "consumerKey": "none",
         "consumerSecret": "none",
         "token": "none",
         "tokenSecret": "none"
     },
     "thresholds": {
-        "70": [
-            "@ISP Why is my internet only %d/%u mbps when I pay for 70/30?"
+        "150": [
+            "@ISP Why is my internet only %d/%u mbps when I pay for 200/20?"
         ],
         "50": [
             "@ISP What's wrong with my connection? I only have %d/%u mbps when I pay for 70/30"
