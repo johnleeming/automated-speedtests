@@ -1,7 +1,7 @@
 {
     "interval": "1800",
-    "speedtestPath": "speedtest-cli/speedtest_cli.py",
-    "webserverPath": "website",
+    "speedtestPath": "/home/pi/automated-speedtests/speedtest-cli/speedtest_cli.py",
+    "webserverPath": "/home/pi/automated-speedtests/website",
     "twitter": {
         "tweeting": "disabled",
         "consumerKey": "none",
